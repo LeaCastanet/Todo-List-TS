@@ -14,11 +14,12 @@ body {
 
 .header {
   flex: 1;
-  background-color: seagreen;
+  background-color: darkslategrey;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
 .inputContainer {
@@ -48,6 +49,79 @@ body {
 }
 
 .todoList {
-  flex: 2;
+  flex: 3;
   width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  flex-direction: column;
+}
+
+.task {
+  width: 500px;
+  height: 50px;
+  display: flex;
+  color: white;
+  margin: 15px;
+}
+
+.content {
+  flex: 6;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spanTask {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  width: 75%;
+  height: 100%;
+  font-size: 18px;
+  border-right: none;
+  background-color: darkslategrey;
+}
+
+.spanDeadline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  width: 25%;
+  height: 100%;
+  font-size: 18px;
+  border-right: none;
+  background-color: darkslategrey;
+}
+
+.buttonDelete {
+  flex: 1;
+  height: 100%;
+  border: none;
+  background-color: rgb(34, 59, 59);
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 450px) {
+  .task {
+    width: 350px;
+  }
+
+  .content {
+    flex: 8;
+  }
+
+  .spanTask {
+    width: 80%;
+  }
+
+  .spanDeadline {
+    width: 20%;
+  }
 }
